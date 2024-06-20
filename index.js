@@ -84,11 +84,40 @@
 
 
 
-const fs =  require('fs');
-const path =  require('path');
-const dirPath = path.join(__dirname,'crud');
+// const fs =  require('fs');
+// const path =  require('path');
+// const dirPath = path.join(__dirname,'crud');
 
-const filePath  = `${dirPath}/hello.txt`;
+// const filePath  = `${dirPath}/apple.txt`;
 
-fs.writeFileSync(filePath,`Hi this is simple file system`)
+// // fs.writeFileSync(filePath,`Hi this is simple file system`)
 
+// fs.readFile(filePath,'utf-8',((err,item)=>{
+//     console.log(item)
+// }))
+
+// fs.appendFile(filePath,'and file nanme is apple.txt',(err)=>{
+//     if(!err) console.log('file is updated')
+// })
+
+// fs.rename(filePath, `${dirPath}/fruit.txt`,(err)=>{
+//     if(!err) console.log('file is renammed')
+// })
+
+// fs.unlinkSync(`${dirPath}/fruit.txt`)
+
+let a = 10;
+let b = 0;
+
+let resultData =  new Promise((resolve,reject) =>{
+    setTimeout(() => {
+        resolve(20)
+    }, 2000);
+    
+})
+resultData.then((data)=>{
+    b = 20;
+    console.log(a+b);
+})
+
+console.log(a+b)
