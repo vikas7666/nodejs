@@ -106,18 +106,18 @@
 
 // fs.unlinkSync(`${dirPath}/fruit.txt`)
 
-let a = 10;
-let b = 0;
+// let a = 10;
+// let b = 0;
 
-let resultData =  new Promise((resolve,reject) =>{
-    setTimeout(() => {
-        resolve(20)
-    }, 2000);
+// let resultData =  new Promise((resolve,reject) =>{
+//     setTimeout(() => {
+//         resolve(20)
+//     }, 2000);
     
-})
-resultData.then((data)=>{
-    b = 20;
-    console.log(a+b);
-})
+// })
+// resultData.then((data)=>{
+//     b = 20;
+//     console.log(a+data);
+// })
 
-console.log(a+b)
+// console.log(a+b)
