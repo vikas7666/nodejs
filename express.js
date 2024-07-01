@@ -52,5 +52,11 @@ app.get('/profile',(_,resp)=>{
     resp.render('profile',{user})
 })
 
+app.get('/login',(_,resp) =>{
+    resp.render('login')
+})
 
+app.get('/header',((req,resp) =>{
+    resp.resnder('common')
+}))
 app.listen(4200)
