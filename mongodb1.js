@@ -12,7 +12,9 @@ const dbconnect = require('./mongodb_connectiondb')
 
 const main = async ()=>{
     let data = await dbconnect();
-    data =  await data.find().toArray();
+   // data =  await data.find().toArray();
+    // where condition in mongodb
+    data =  await data.find({name:'accer'}).toArray();
     console.warn(data);
 }
 
