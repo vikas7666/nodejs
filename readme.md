@@ -37,7 +37,7 @@ Database Name : ecommerce, collection : product
 db.product.insertOne({name :'m-40',brand:'samusunf',country:'india'})
 
 // how to find insert data in mongo
-
+// show collection data
 db.product.find()
 
 // update command 

@@ -11,7 +11,9 @@ const insert = async ()=>{
    const result = await db.insertMany([
     
     {name:'s10',brand :'accer',country:'uk'},
-    {name:'s11',brand :'accer2',country:'uk'}
+    {name:'s11',brand :'accer2',country:'uk'},
+    {name:'s12',brand :'accer',country:'uk'},
+    {name:'s13',brand :'accer',country:'uk'},
 
     ])
    console.log(result)
