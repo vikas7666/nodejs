@@ -22,5 +22,9 @@ app.post('/', async (req,resp) =>{
    
 })
 
+app.put("/",(req,resp) =>{
+    console.log({result:"updated"})
+})
+
 app.listen(5000)
 
