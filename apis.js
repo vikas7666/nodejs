@@ -8,7 +8,7 @@ app.use(express.json());
 app.get('/', async (req,resp) =>{
     let data = await dbConnect();
     data =  await data.find().toArray()
-    console.log(data)
+    //console.log(data)
     resp.send(data)
 })
 
@@ -17,13 +17,15 @@ app.get('/', async (req,resp) =>{
 app.post('/', async (req,resp) =>{
    let data = await dbConnect();
    let result = await data.insertOne(req.body)
-   console.log("Inserted document:", result);
+  // console.log("Inserted document:", result);
     resp.send(result);
    
 })
 
-app.put("/",(req,resp) =>{
-    console.log({result:"updated"})
+app.put("/",async(req,resp) =>{
+    let data = await dbConnect();
+    let result  = data.updateOne({name : req.body.name},{$set: {name:'vikas'}})
+    resp.send({result:'update'})
 })
 
 app.listen(5000)
