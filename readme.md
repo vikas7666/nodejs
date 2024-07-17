@@ -3,7 +3,7 @@ filter hamesha array me lagayaa jataa hai o loop bhi in built karata hai usame p
 
 Jo file hame impport karane padate hai o non global moduele hote hai
 
-https://youtu.be/usnMaVgtk7M
+https://youtu.be/T6S1-TuPBzg?list=PL8p2I9GklV456iofeMKReMTvWLr7Ki9At
 
 http://localhost:4200/profile
 
