@@ -3,7 +3,7 @@ filter hamesha array me lagayaa jataa hai o loop bhi in built karata hai usame p
 
 Jo file hame impport karane padate hai o non global moduele hote hai
 
-https://youtu.be/VMoFn7-iZfE
+https://youtu.be/uDcLa97F_zg?t=2
 
 http://localhost:4200/profile
 
@@ -15,7 +15,7 @@ First, ensure that your MongoDB server is running. If it’s not, MongoDB Compas
 
 Open your command prompt or terminal and type  : mongod
 
-1) Mongod
+1) mongod
 
  Connect to MongoDB 
  mongosh
